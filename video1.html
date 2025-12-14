@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Romantic Birthday Presentation</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+    font-family:'Poppins',system-ui;
+    background:linear-gradient(180deg,#fff5f8,#ffe6ef);
+    overflow:hidden;
+}
+
+.presentation-container{width:100vw;height:100vh;position:relative}
+
+.slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:none;
+    padding:20px;
+    background:linear-gradient(145deg,#ffdde8,#ffd1e3);
+    opacity:0;
+    transition:.6s ease;
+}
+.slide.active{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    opacity:1;
+}
+
+.slide-content{
+    background:rgba(255,255,255,.85);
+    border-radius:22px;
+    padding:20px;
+    max-width:480px;
+    width:100%;
+    box-shadow:0 8px 25px rgba(255,105,155,.18);
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.image-container{
+    aspect-ratio:1;
+    border-radius:16px;
+    overflow:hidden;
+    background:#ffd1e3;
+}
+
+.image-container img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.slide-number{text-align:center;color:#ff7aa8;font-size:13px}
+
+h1{
+    text-align:center;
+    color:#ff4f8b;
+    font-size:22px;
+}
+
+.editable-text{
+    background:#fff8fc;
+    padding:12px;
+    border-radius:12px;
+    font-size:15px;
+    line-height:1.5;
+    color:#6b394a;
+}
+
+.navigation{
+    position:absolute;
+    bottom:5px;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    gap:14px;
+}
+
+.nav-btn{
+    width:48px;height:48px;
+    border-radius:50%;
+    border:none;
+    background:#ff9bbd;
+    color:white;
+    font-size:22px;
+}
+
+.dots-container{
+    position:absolute;
+    top:14px;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    gap:8px;
+}
+.dot{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:#ffd1dc;
+}
+.dot.active{
+    width:28px;
+    background:#ff4f8b;
+}
+</style>
+</head>
+
+<body>
+<div class="presentation-container">
+
+<!-- SLIDE 1 -->
+<div class="slide active">
+<div class="slide-content">
+<div class="image-container"><img src="https://i.postimg.cc/LsCvgbS0/15.jpg"></div>
+<div class="slide-number">Slide 1 of 10</div>
+<h1>Happy Birthday My Love</h1>
+<div class="editable-text">Wishing you the softest, sweetest, warmest birthday ever. You deserve all the love in the world and even more. I'm so lucky to have you in my life. 💗</div>
+</div>
+</div>
+
+<!-- SLIDE 2 -->
+<div class="slide">
+<div class="slide-content">
+<div class="image-container"><img src="https://i.postimg.cc/02RnSmgD/3.jpg"></div>
+<div class="slide-number">Slide 2 of 10</div>
+<h1>You Are My Happiness</h1>
+<div class="editable-text">Every moment with you feels special. Your smile, your voice, your presence — everything about you lights up my world in ways you can’t imagine. 💞</div>
+</div>
+</div>
+
+<!-- SLIDE 3 -->
+<div class="slide">
+<div class="slide-content">
+<div class="image-container"><img src="https://i.postimg.cc/13WDvVdD/16.jpg"></div>
+<div class="slide-number">Slide 3 of 10</div>
+<h1>Our Memories</h1>
+<div class="editable-text">All the little moments we’ve shared stay with me forever. They are treasures I hold close to my heart. Here’s to creating many more memories together. 🥺💕</div>
+</div>
+</div>
+
+<!-- SLIDE 4 -->
+<div class="slide">
+<div class="slide-content">
+<div class="image-container"><img src="https://i.postimg.cc/VLmM1FQj/12.jpg"></div>
+<div class="slide-number">Slide 4 of 10</div>
+<h1>Your Light</h1>
+<div class="editable-text">You bring so much brightness wherever you go. You make life feel lighter, softer, and full of hope. You’re truly magical. ✨💖</div>
+</div>
+</div>
+
+<!-- SLIDE 5 -->
+<div class="slide">
+<div class="slide-content">
+<div class="image-container"><img src="https://i.postimg.cc/15bQwvmW/5.jpg"></div>
+<div class="slide-number">Slide 5 of 10</div>
+<h1>Growing With You</h1>
+<div class="editable-text">Every year you grow more wonderful, kinder, stronger, and even more lovable. Watching you bloom is the most beautiful thing ever. 🌷💞</div>
+</div>
+</div>
+
+<!-- SLIDE 6 -->
+<div class="slide">
+<div class="slide-content">
+<div class="image-container"><img src="https://i.postimg.cc/NFL3rHZm/1.jpg"></div>
+<div class="slide-number">Slide 6 of 10</div>
+<h1>Joy & Laughter</h1>
+<div class="editable-text">Your laugh is my favorite sound. Your happiness is my favorite feeling. You fill my days with joy in the sweetest ways. 💗😂</div>
+</div>
+</div>
+
+<!-- SLIDE 7 -->
+<div class="slide">
+<div class="slide-content">
+<div class="image-container"><img src="https://i.postimg.cc/9fpK8bhS/2.jpg"></div>
+<div class="slide-number">Slide 7 of 10</div>
+<h1>Your Dreams Matter</h1>
+<div class="editable-text">I pray all your dreams come true. I want to see you win, succeed, and shine brighter than ever. I’ll always cheer for you. ⭐💗</div>
+</div>
+</div>
+
+<!-- SLIDE 8 -->
+<div class="slide">
+<div class="slide-content">
+<div class="image-container"><img src="https://i.postimg.cc/gJjSMP4j/8.jpg"></div>
+<div class="slide-number">Slide 8 of 10</div>
+<h1>Grateful For You</h1>
+<div class="editable-text">You are one of the greatest blessings in my life. I’m grateful for your love, your presence, and your heart. 💗🙏</div>
+</div>
+</div>
+
+<!-- SLIDE 9 -->
+<div class="slide">
+<div class="slide-content">
+<div class="image-container"><img src="https://i.postimg.cc/QN2DW6xJ/10.jpg"></div>
+<div class="slide-number">Slide 9 of 10</div>
+<h1>New Adventures</h1>
+<div class="editable-text">Here's to another year of amazing adventures, beautiful moments, and endless possibilities. May this birthday mark the beginning of your best year yet!</div>
+</div>
+</div>
+
+<!-- SLIDE 10 -->
+<div class="slide">
+<div class="slide-content">
+<div class="image-container"><img src="https://i.postimg.cc/zXCsH8QJ/11.jpg"></div>
+<div class="slide-number">Slide 10 of 10</div>
+<h1>Make A Wish!</h1>
+<div class="editable-text">Close your eyes, make a wish, and blow out the candles. May this year bring you everything you've been hoping for and more. Happy Birthday!</div>
+</div>
+</div>
+
+<div class="dots-container" id="dotsContainer"></div>
+
+<div class="navigation">
+<button class="nav-btn" onclick="prev()">←</button>
+<button class="nav-btn" onclick="next()">→</button>
+</div>
+
+</div>
+
+<!-- SINGLE AUDIO ELEMENT -->
+<audio id="slideAudio"></audio>
+
+<script>
+const slides = document.querySelectorAll('.slide');
+const dotsContainer = document.getElementById('dotsContainer');
+const audio = document.getElementById('slideAudio');
+
+let index = 0;
+
+// SONGS PER SLIDE
+const songs = [
+  "music1.mp3",
+  "music2.mp3",
+  "music3.mp3",
+  "music4.mp3",
+  "music5.mp3",
+  "music6.mp3",
+  "music7.mp3",
+  "music8.mp3",
+  "music9.mp3",
+  "music10.mp3"
+];
+
+// Create dots
+slides.forEach((_, i) => {
+  const dot = document.createElement('div');
+  dot.className = 'dot' + (i === 0 ? ' active' : '');
+  dot.onclick = () => go(i);
+  dotsContainer.appendChild(dot);
+});
+
+function playSong(i){
+  audio.pause();
+  audio.src = songs[i];
+  audio.currentTime = 0;
+  audio.play().catch(()=>{});
+}
+
+function show(n){
+  slides[index].classList.remove('active');
+  dotsContainer.children[index].classList.remove('active');
+
+  index = (n + slides.length) % slides.length;
+
+  slides[index].classList.add('active');
+  dotsContainer.children[index].classList.add('active');
+
+  playSong(index);
+}
+
+function next(){ show(index+1); }
+function prev(){ show(index-1); }
+function go(n){ show(n); }
+
+// First interaction unlocks audio
+document.addEventListener('click', function unlock(){
+  playSong(index);
+  document.removeEventListener('click', unlock);
+},{once:true});
+</script>
+</body>
+</html>
